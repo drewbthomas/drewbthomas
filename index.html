@@ -1,128 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Website Under Construction</title>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drew B. Thomas — Modern History &amp; Digital History</title>
+  <meta name="description" content="Drew B. Thomas is Assistant Professor of Modern History at the University of Salzburg, researching early modern print, the Protestant Reformation, and digital history.">
+  <meta name="author" content="Drew B. Thomas"><meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="profile"><meta property="og:title" content="Drew B. Thomas — Modern History &amp; Digital History">
+  <meta property="og:description" content="Research in book history, early modern print, and computational methods.">
+  <meta property="og:url" content="https://drewbthomas.com/"><meta property="og:image" content="https://drewbthomas.com/assets/drew-thomas-homepage.png">
+  <link rel="canonical" href="https://drewbthomas.com/">
   <style>
-    :root {
-      --bg: #f4f1ea;
-      --card: #ffffff;
-      --text: #2c2c2c;
-      --accent: #5b4636;
-      --muted: #6f6f6f;
-      --border: #ddd7cf;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      background: var(--bg);
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 24px;
-    }
-
-    .container {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      max-width: 720px;
-      width: 100%;
-      padding: 56px 48px;
-      text-align: center;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    }
-
-    h1 {
-      margin-top: 0;
-      font-size: 2.4rem;
-      color: var(--accent);
-      letter-spacing: 0.03em;
-    }
-
-    .subtitle {
-      font-size: 1.15rem;
-      color: var(--muted);
-      margin-bottom: 32px;
-      line-height: 1.7;
-    }
-
-    .divider {
-      width: 80px;
-      height: 2px;
-      background: var(--accent);
-      margin: 24px auto 32px;
-      opacity: 0.5;
-    }
-
-    p {
-      line-height: 1.8;
-      margin-bottom: 20px;
-      font-size: 1.05rem;
-    }
-
-    .footer {
-      margin-top: 36px;
-      font-size: 0.95rem;
-      color: var(--muted);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s ease;
-    }
-
-    a:hover {
-      border-color: var(--accent);
-    }
-
-    @media (max-width: 640px) {
-      .container {
-        padding: 40px 28px;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      .subtitle,
-      p {
-        font-size: 1rem;
-      }
-    }
+    :root{--white:#fff;--wash:#f5f7fa;--ink:#111722;--muted:#5c6573;--rule:#d8dde5;--blue:#3157e2;--hot:#f02e9b;--serif:Georgia,"Times New Roman",serif;--sans:Arial,Helvetica,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--white);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.6;text-rendering:optimizeLegibility}a{color:inherit;text-decoration-color:rgba(49,87,226,.55);text-underline-offset:.18em}a:hover{color:var(--blue)}a:focus-visible{outline:3px solid rgba(49,87,226,.3);outline-offset:4px}img{display:block;max-width:100%}.shell{width:min(1180px,calc(100% - 48px));margin:auto}
+    .site-header{background:#fff;border-bottom:1px solid var(--rule)}.site-header .shell{min-height:104px;display:flex;align-items:center;justify-content:space-between;gap:32px}.wordmark{font-size:clamp(1.55rem,2.6vw,2.15rem);font-weight:400;line-height:1;text-decoration:none;letter-spacing:-.025em}nav{display:flex;gap:28px;font:700 .7rem/1 var(--sans);letter-spacing:.1em;text-transform:uppercase}nav a{text-decoration:none}
+    .hero-stage{border-bottom:1px solid var(--rule);background-color:#eef1f5;background-image:linear-gradient(90deg,#fff 0,#fff 42%,rgba(255,255,255,.97) 50%,rgba(255,255,255,.35) 66%,transparent 78%),url("assets/drew-thomas-homepage.png");background-repeat:no-repeat;background-position:center,right center;background-size:100% 100%,auto 100%}.hero{position:relative;display:flex;align-items:center;min-height:540px;padding:48px 0}.hero:before{content:"";position:absolute;left:0;top:0;width:80px;height:3px;background:var(--blue)}.hero-copy{width:min(620px,56%);padding:26px 44px 28px 0}.eyebrow,.section-label{margin:0 0 18px;color:var(--blue);font:700 .7rem/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase}h1,h2,p{margin-top:0}h1{max-width:760px;margin:0 0 24px;font-size:clamp(3.6rem,7.5vw,6.7rem);font-weight:400;line-height:.92;letter-spacing:-.05em}.dek{max-width:680px;margin:0 0 28px;color:#303846;font-size:clamp(1.15rem,2vw,1.38rem);line-height:1.5}.appointment{max-width:660px;margin:0 0 32px;padding-left:16px;border-left:3px solid var(--blue);font:.83rem/1.55 var(--sans);color:var(--muted)}.appointment strong{color:var(--ink)}.actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px}.button{display:inline-block;padding:13px 19px 12px;background:var(--ink);color:#fff;font:700 .7rem/1 var(--sans);letter-spacing:.09em;text-decoration:none;text-transform:uppercase}.button:hover{background:var(--blue);color:#fff}.text-link{font:700 .75rem/1.3 var(--sans);letter-spacing:.04em}.portrait-wrap{display:none}.portrait{display:block;width:100%;height:290px;object-fit:cover;object-position:50% 18%;filter:grayscale(.15) contrast(1.05)}
+    section{scroll-margin-top:24px}.band{border-top:1px solid var(--rule)}.section-grid{display:grid;grid-template-columns:minmax(120px,.72fr) minmax(0,2.28fr);gap:clamp(34px,7vw,105px);padding:clamp(52px,6vw,74px) 0}.section-label{margin:5px 0 0}.profile-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(210px,.55fr);gap:clamp(34px,6vw,72px);align-items:start}h2{max-width:760px;margin:0 0 22px;font-size:clamp(2rem,3.8vw,3.25rem);font-weight:400;line-height:1.08;letter-spacing:-.025em}.body-copy p{margin-bottom:1.05em}.research-line{margin-top:24px;padding-top:20px;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}.research-line strong{color:var(--ink)}.research-figure{margin:0;background:var(--ink);padding:9px}.research-figure img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:grayscale(1) contrast(1.1)}.research-figure figcaption{padding:12px 5px 5px;color:#b9c1cf;font:600 .62rem/1.5 var(--sans);letter-spacing:.05em}.method-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.method-tags span{padding:5px 7px;border:1px solid #4c5666;color:#fff;font:600 .57rem/1 var(--sans);letter-spacing:.05em;text-transform:uppercase}
+    .publications{background:var(--wash);background-image:linear-gradient(rgba(17,23,34,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(17,23,34,.035) 1px,transparent 1px);background-size:32px 32px}.publication-list{margin:0;padding:0;list-style:none;background:var(--wash)}.publication{display:grid;grid-template-columns:58px 1fr;gap:20px;padding:22px 0;border-top:1px solid var(--rule)}.publication:last-child{border-bottom:1px solid var(--rule)}.year{color:var(--blue);font:700 .76rem/1.4 var(--sans);letter-spacing:.05em}.citation{margin-bottom:7px;line-height:1.48}.citation cite{font-style:italic}.pub-links{display:flex;flex-wrap:wrap;gap:18px;color:var(--muted);font:700 .65rem/1.5 var(--sans);letter-spacing:.07em;text-transform:uppercase}.pub-links a{text-decoration:none;border-bottom:1px solid #aeb6c3}.all-work{margin:26px 0 0;color:var(--muted);font-size:.9rem}footer{padding:28px 0 32px;background:var(--ink);color:#fff}footer .shell{display:flex;justify-content:space-between;gap:30px;align-items:baseline}footer p{margin:0}.footer-name{font-size:1.2rem}.footer-meta{color:#aeb6c3;font:.68rem/1.5 var(--sans);letter-spacing:.05em}.back-to-top{position:fixed;z-index:10;right:22px;bottom:22px;display:flex;align-items:center;gap:8px;padding:11px 14px;border:1px solid var(--rule);background:#fff;color:var(--ink);box-shadow:0 8px 24px rgba(17,23,34,.12);font:700 .65rem/1 var(--sans);letter-spacing:.08em;text-decoration:none;text-transform:uppercase;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s,transform .2s,visibility .2s}.back-to-top.visible{opacity:1;visibility:visible;transform:none}.back-to-top:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+    @media(max-width:760px){body{font-size:17px}.shell{width:min(100% - 34px,1180px)}.site-header .shell{min-height:82px}.wordmark{font-size:1.45rem}nav{gap:15px}.hero-stage{background:#fff}.hero{display:block;min-height:0;padding:38px 0 0}.hero-copy{width:100%;padding:0 0 38px}.portrait-wrap{display:block;width:calc(100% + 34px);margin-left:-17px}.portrait{height:290px;object-position:50% 20%}h1{font-size:clamp(3.5rem,16vw,5rem)}.section-grid,.profile-grid{grid-template-columns:1fr;gap:22px}.publication{grid-template-columns:46px 1fr;gap:12px}footer .shell{display:block}.footer-meta{margin-top:8px}}
+    @media print{nav,.actions,.back-to-top{display:none}body{background:#fff;color:#000}.hero,.section-grid{padding:30px 0}.publications{background:#fff}}
   </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Drew B. Thomas","url":"https://drewbthomas.com/","image":"https://drewbthomas.com/assets/drew-thomas-homepage.png","jobTitle":"Assistant Professor of Modern History","affiliation":{"@type":"CollegeOrUniversity","name":"University of Salzburg"},"knowsAbout":["Book history","Early modern history","Protestant Reformation","Digital history","Computer vision","Graph databases","Vector databases"]}</script>
 </head>
 <body>
-  <main class="container">
-    <h1>Website Updates in Progress</h1>
-
-    <div class="divider"></div>
-
-    <p class="subtitle">
-      Thank you for visiting. This website is currently being updated and reorganized.
-    </p>
-
-    <p>
-      The updated site will include information about current research, publications, teaching, and a downloadable curriculum vitae.
-    </p>
-
-    <p>
-      Please check back soon for updated materials and information.
-    </p>
-
-    <div class="footer">
-      © 2026 • Drew B. Thomas
-    </div>
+  <header class="site-header"><div class="shell"><a class="wordmark" href="#top">Drew B. Thomas</a><nav aria-label="Primary navigation"><a href="#about">About</a><a href="#publications">Publications</a><a href="assets/drew-thomas-cv.pdf">CV</a></nav></div></header>
+  <main id="top">
+    <div class="hero-stage"><div class="shell hero"><div class="hero-copy"><p class="eyebrow">Modern History · Digital History</p><h1>Drew B.<br>Thomas</h1><p class="dek">I study the history of communication in early modern Europe—especially print, images, and the people who made and moved them during the Protestant Reformation.</p><p class="appointment"><strong>Assistant Professor of Modern History</strong><br>University of Salzburg · Emphasis on Digital History</p><div class="actions"><a class="button" href="assets/drew-thomas-cv.pdf">Download CV</a><a class="text-link" href="#publications">Selected publications ↓</a></div></div><div class="portrait-wrap"><img class="portrait" src="assets/drew-thomas-homepage.png" alt="Portrait of Drew B. Thomas" width="1448" height="1086"></div></div></div>
+    <section class="band" id="about"><div class="shell section-grid"><p class="section-label">Profile</p><div class="profile-grid"><div class="body-copy"><h2>Book history at computational scale.</h2><p>I am a historian of early modern material culture and communication, with a particular focus on the printing industry of the Holy Roman Empire during the Protestant Reformation and German Renaissance.</p><p>My work combines the close study of books and woodcuts with computational methods. I use convolutional neural networks, graph databases, vector databases, and large bibliographical datasets to investigate how printers designed, manufactured, copied, and circulated texts and images.</p><p class="research-line"><strong>Current research:</strong> <cite>Visualizing Faith: Print, Piety &amp; Propaganda</cite> examines how religious groups used visual communication in propaganda and devotional literature during periods of conflict.</p></div><figure class="research-figure"><img src="assets/ornamento-analysis.jpg" alt="An early printed page with detected ornament and initial marked for computational analysis" width="387" height="503"><figcaption>Early print, annotated for image analysis.<div class="method-tags"><span>CNN</span><span>Graphs</span><span>Vectors</span></div></figcaption></figure></div></div></section>
+    <section class="band publications" id="publications"><div class="shell section-grid"><p class="section-label">Selected work</p><div><h2>Publications</h2><ol class="publication-list">
+      <li class="publication"><span class="year">2026</span><div><p class="citation">“Transferring AI-Based Iconclass Classification Across Image Traditions: A RAG Pipeline for the Wenzelsbibel.” With Julia Hintersteiner. <cite>Histories</cite> 6, no. 1: 17.</p><div class="pub-links"><a href="https://doi.org/10.3390/histories6010017">Open access ↗</a></div></div></li>
+      <li class="publication"><span class="year">2026</span><div><p class="citation">“Automating Iconclass: LLMs and RAG for Large-Scale Classification of Religious Woodcuts.” <cite>Digital Culture &amp; Education</cite> 16, no. 3: 161–182.</p><div class="pub-links"><a href="https://arxiv.org/abs/2510.19986">Preprint ↗</a><a href="https://static1.squarespace.com/static/5cf15af7a259990001706378/t/6a3f2865180a4b537a7b2cf6/1782524005547/16.3+thomas+pdf++%282%29.pdf">Journal PDF ↗</a><a href="https://www.digitalcultureandeducation.com/volume-163">Issue contents ↗</a></div></div></li>
+      <li class="publication"><span class="year">2026</span><div><p class="citation">“Michael Lotter und der Buchdruck in Magdeburg zur Zeit der Reformation.” In <cite>Großstadt und Reformation</cite>, edited by Hartmut Kühne and Christoph Volkmar. Magdeburger Schriften. Halle: Mitteldeutscher Verlag.</p><div class="pub-links"><a href="https://www.mitteldeutscherverlag.de/magdeburger-schriften/k%C3%BChne%2C-h-volkmar%2C-c-hg-gro%C3%9Fstadt-und-reformation-detail">Publisher ↗</a></div></div></li>
+      <li class="publication"><span class="year">2025</span><div><p class="citation">“Provenance and Deception: Tracking Counterfeit Luther Pamphlets in Wittenberg.” <cite>Reformation</cite> 30, no. 1: 1–40.</p><div class="pub-links"><a href="https://doi.org/10.1080/13574175.2025.2476612">Open access ↗</a></div></div></li>
+      <li class="publication"><span class="year">2022</span><div><p class="citation"><cite>The Industry of Evangelism: Printing for the Reformation in Martin Luther’s Wittenberg.</cite> Leiden: Brill.</p><div class="pub-links"><a href="https://doi.org/10.1163/9789004462427">Publisher ↗</a></div></div></li>
+      <li class="publication"><span class="year">2022</span><div><p class="citation">“A Crowded Field in Luther’s Wittenberg: Collaboration and Sub-Contracting in the Reformation Book Trade.” In <cite>The Book World of Early Modern Europe</cite>, vol. 2, 36–50.</p><div class="pub-links"><a href="https://doi.org/10.1163/9789004518100_005">Publisher ↗</a><a href="assets/thomas-crowded-field.pdf">Postprint PDF ↓</a></div></div></li>
+      <li class="publication"><span class="year">2022</span><div><p class="citation">“Selling Luther: Printing Counterfeits in Reformation Augsburg.” In <cite>Communities of Print</cite>, 17–38.</p><div class="pub-links"><a href="https://doi.org/10.1163/9789004470439_003">Publisher ↗</a><a href="assets/thomas-selling-luther.pdf">Postprint PDF ↓</a></div></div></li>
+      <li class="publication"><span class="year">2021</span><div><p class="citation">“The Lotter Printing Dynasty: Michael Lotter and Reformation Printing in Magdeburg.” In <cite>Print Culture at the Crossroads</cite>, 245–268.</p><div class="pub-links"><a href="https://doi.org/10.1163/9789004462342_014">Publisher ↗</a><a href="assets/thomas-lotter-dynasty.pdf">Postprint PDF ↓</a></div></div></li>
+      <li class="publication"><span class="year">2019</span><div><p class="citation">“Circumventing Censorship: The Rise &amp; Fall of Reformation Print Centres.” In <cite>Negotiating Conflict and Controversy in the Early Modern Book World</cite>, 13–37.</p><div class="pub-links"><a href="https://doi.org/10.1163/9789004402522_003">Publisher ↗</a><a href="assets/thomas-circumventing-censorship.pdf">Postprint PDF ↓</a></div></div></li>
+      <li class="publication"><span class="year">2019</span><div><p class="citation">“Cashing in on Counterfeits: Fraud in the Reformation Print Industry.” In <cite>Buying and Selling: The Business of Books in Early Modern Europe</cite>, 276–300.</p><div class="pub-links"><a href="https://doi.org/10.1163/9789004340398_015">Publisher ↗</a><a href="assets/thomas-cashing-in-on-counterfeits.pdf">Postprint PDF ↓</a></div></div></li>
+      <li class="publication"><span class="year">2017</span><div><p class="citation">“Reconstructing Broadsheet Production in Wittenberg.” In <cite>Broadsheets: Single-sheet Publishing in the First Age of Print</cite>, 114–137.</p><div class="pub-links"><a href="https://doi.org/10.1163/9789004340312_006">Open access ↗</a><a href="assets/thomas-broadsheet-production.pdf">PDF ↓</a></div></div></li>
+    </ol><p class="all-work">For a fuller record of books, articles, chapters, reviews, and exhibitions, see the <a href="assets/drew-thomas-cv.pdf">curriculum vitae</a>.</p></div></div></section>
   </main>
+  <footer><div class="shell"><p class="footer-name">Drew B. Thomas</p><p class="footer-meta">© 2026 Drew B. Thomas</p></div></footer>
+  <a class="back-to-top" href="#top" aria-label="Back to top"><span aria-hidden="true">↑</span> Top</a>
+  <script>document.querySelectorAll('.publication a').forEach(link=>{link.target='_blank';link.rel='noopener noreferrer'});const topLink=document.querySelector('.back-to-top');const setTopLink=()=>topLink.classList.toggle('visible',window.scrollY>420);window.addEventListener('scroll',setTopLink,{passive:true});setTopLink();</script>
 </body>
 </html>
